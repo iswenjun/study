@@ -128,3 +128,20 @@ InterruptedException – if the current thread was interrupted while waiting
 
 
 # 线程池参数调节
+
+CPU密集型（计算密集型）：corePoolSize = CPU核数 + 1
+
+IO密集型：corePoolSize = CPU核数 * 2
+
+
+
+# 线程池监控
+
+* getActiveCount：返回活动执行任务的大约线程数。
+* getCompletedTaskCount()：返回已完成执行的任务的大致总数。
+* getCorePoolSize()：返回核心线程数。
+* getLargestPoolSize()：返回池中同时存在的最大线程数。
+* getMaximumPoolSize()：返回允许的最大线程数。
+* getPoolSize()：返回当前线程池中的线程数。
+* getTaskCount()：返回计划执行的任务的大致总数。
+
